@@ -186,6 +186,7 @@ pattern = '''
 print(re.search(pattern, 'M')) # 这个没有申明为松散正则表达式，按普通的来处理了，打印： None
 print(re.search(pattern, 'M', re.VERBOSE).groups()) # 打印： ('M', '', '', '')
 
+
 # (?iLmsux) 用法
 # 以下这三句的写法都是一样的效果，表示忽略大小写，打印： ['aa', 'AA']
 print(re.findall(r'(?i)(aa)', 'aa kkAAK s'))
